@@ -1,0 +1,129 @@
+<html>
+<head>
+<title>Hotel Booking Form</title>
+<style>
+
+body { 
+font-family : Arial ;
+background-color : white ;
+}
+
+.container {
+width : 600px;
+margin : 40px auto;
+background-color : whitesmoke;
+padding : 20px;
+border-radius : 8px;
+}
+
+h2 {
+text-align : center;
+color : Blue;
+}
+
+table {
+border : 1px;
+width : 100%;
+}
+
+td {
+font-size :14px;
+}
+
+input, textarea {
+width: 100%;
+padding: 6px;
+border: 1px solid white;
+border-radius: 4px;
+}
+
+textarea{
+    resize: none;
+}
+
+.btn {
+background-color: grey;
+color: white;
+padding: 10px;
+border: none;
+width: 100%;
+border-radius: 5px;
+}
+
+.btn:hover {
+background-color: darkgrey;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h3>Hotel Booking Form</h3>
+
+<form>
+<table>
+
+<tr>
+<td>Full Name:</td>
+<td><input type="text" name="name" required></td>
+</tr>
+
+<tr>
+<td>Email:</td>
+<td><input type="email" name="email" required></td>
+</tr>
+
+<tr>
+<td>Phone Number:</td>
+<td><input type="tel" name="phone" required></td>
+</tr>
+
+<tr>
+<td>Check-in Date:</td>
+<td><input type="date" name="checkin" required></td>
+</tr>
+
+<tr>
+<td>Check-out Date:</td>
+<td><input type="date" name="checkout" required></td>
+</tr>
+
+<tr>
+<td>Room Type:</td>
+<td>
+<select name="room">
+<option>Single</option>
+<option>Double</option>
+<option>Deluxe</option>
+<option>Suite</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Number of Guests:</td>
+<td><input type="number" min="1" max="10"></td>
+</tr>
+
+<tr>
+<td>Special Requests:</td>
+<td><textarea rows="3"></textarea></td>
+</tr>
+
+<tr>
+<td colspan="2">
+<input type="submit" value="Book Now" class="btn">
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="reset" value="Reset Form" class="btn">
+</td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>
